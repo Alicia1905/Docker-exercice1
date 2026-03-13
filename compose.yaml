@@ -1,7 +1,4 @@
-version: "3.9"
-
 services:
-
   users-db:
     image: postgres:15-alpine
     restart: unless-stopped
