@@ -1,4 +1,5 @@
 services:
+<<<<<<< HEAD
   products-db:
     image: postgres:15-alpine
     container_name: products-db
@@ -92,6 +93,8 @@ services:
       - orders-network
       - api-network
 
+=======
+>>>>>>> main
   users-db:
     image: postgres:15-alpine
     container_name: users-db
