@@ -15,7 +15,6 @@ L'application est composée de :
 
 ## Schéma logique
 
-```text
 CLIENT (curl / Postman / navigateur)
                 │
                 ▼
