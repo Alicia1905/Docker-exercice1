@@ -7,9 +7,9 @@ products = [
     {"id": 2, "name": "Souris", "price": 19.99, "stock": 25}
 ]
 
-@app.route("/health", methods=["GET"])
+@app.route("/health")
 def health():
-    return jsonify({"status": "ok"})
+    return {"status": "ok"}, 200
 
 @app.route("/products", methods=["GET"])
 def get_products():
@@ -56,4 +56,4 @@ def delete_product(id):
     return jsonify({"error": "Produit non trouvé"}), 404
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5002)
